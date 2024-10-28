@@ -1,6 +1,8 @@
 import tkinter as tk
 import random
 
+# The game of Mastermind
+
 def generate_secret_code(length=4):
     return [random.randint(1, 6) for _ in range(length)]
 
