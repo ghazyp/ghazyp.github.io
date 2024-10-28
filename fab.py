@@ -1,3 +1,5 @@
+# Solution to the Instruens Fabulam problem
+
 def parse_input(input_lines):
 
     """Parses the input and returns a list of tables, where each table is a list of rows.
