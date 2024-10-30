@@ -1,0 +1,33 @@
+procedure main(arglist)
+    local alphabet, f, line, i, shft, plain, reversed_substring, rotated_text, new_index
+    alphabet := "ABCDEFGHIJKLMNOPQRSTUVWXYZ_."
+    
+    # Open the file for reading
+    f := open("rot.in", "r") | stop("cannot open file")
+
+    while line := read(f) do {
+        if i := find(' ', line) then {
+            shft := integer(line[1:i])  # Convert the shift value to an integer
+            plain := line[i+1:0]
+
+            # Reverse the plain text
+            reversed_substring := reverse(plain)
+
+            # Rotate each character in the reversed substring
+            rotated_text := ""
+            every char := !reversed_substring do {
+                pos := find(char, alphabet)
+                if pos > 0 then {
+                    new_index := (pos + shft - 1) % *alphabet
+                    rotated_text ||:= alphabet[new_index + 1]
+                } else {
+                    rotated_text ||:= char  # Keep the character as is if not found in alphabet
+                }
+            }
+
+            # Output the rotated and reversed text
+            write(rotated_text)
+        }
+    }
+    close(f)
+end
