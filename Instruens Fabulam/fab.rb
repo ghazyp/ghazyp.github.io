@@ -1,5 +1,5 @@
 # Function to parse input and return a list of tables
-def parse_input(input_lines)
+  def parse_input(input_lines)
     tables = []
     current_table = []
   
