@@ -1,0 +1,721 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Indonesian_Election_Results_202 (Indonesian_Election_Results_2024)' inline='true' name='federated.1v4vvz41ssj6ik13fxxp70g9ljng' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Indonesian_Election_Results_2024' name='excel-direct.1g5f0w61d1a8kc1ebujl101yik1s'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/ghazypadmakoesoema/Documents/2024 Indonesian election/Indonesian_Election_Results_2024.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1g5f0w61d1a8kc1ebujl101yik1s' name='Indonesian_Election_Results_202' table='[Indonesian_Election_Results_202$]' type='table'>
+          <columns gridOrigin='A1:D40:no:A1:D40:0' header='yes' outcome='6'>
+            <column datatype='string' name='Province' ordinal='0' />
+            <column datatype='integer' name='Anies Baswedan' ordinal='1' />
+            <column datatype='integer' name='Prabowo Subianto' ordinal='2' />
+            <column datatype='integer' name='Ganjar Pranowo' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Indonesian_Election_Results_202]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D40:no:A1:D40:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Province</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Province]</local-name>
+            <parent-name>[Indonesian_Election_Results_202]</parent-name>
+            <remote-alias>Province</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Indonesian!Election!Results!202_F8D102774BEA4750B6985DB8CA16C9F5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Anies Baswedan</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Anies Baswedan]</local-name>
+            <parent-name>[Indonesian_Election_Results_202]</parent-name>
+            <remote-alias>Anies Baswedan</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Indonesian!Election!Results!202_F8D102774BEA4750B6985DB8CA16C9F5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prabowo Subianto</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Prabowo Subianto]</local-name>
+            <parent-name>[Indonesian_Election_Results_202]</parent-name>
+            <remote-alias>Prabowo Subianto</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Indonesian!Election!Results!202_F8D102774BEA4750B6985DB8CA16C9F5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ganjar Pranowo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ganjar Pranowo]</local-name>
+            <parent-name>[Indonesian_Election_Results_202]</parent-name>
+            <remote-alias>Ganjar Pranowo</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Indonesian!Election!Results!202_F8D102774BEA4750B6985DB8CA16C9F5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Anies Baswedan]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Ganjar Pranowo]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Prabowo Subianto]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Indonesian_Election_Results_202' datatype='table' name='[__tableau_internal_object_id__].[Indonesian!Election!Results!202_F8D102774BEA4750B6985DB8CA16C9F5]' role='measure' type='quantitative' />
+      <column-instance column='[Anies Baswedan]' derivation='Attribute' name='[attr:Anies Baswedan:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Ganjar Pranowo]' derivation='Attribute' name='[attr:Ganjar Pranowo:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Prabowo Subianto]' derivation='Attribute' name='[attr:Prabowo Subianto:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Anies Baswedan]' derivation='Sum' name='[sum:Anies Baswedan:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Ganjar Pranowo]' derivation='Sum' name='[sum:Ganjar Pranowo:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Ganjar Pranowo]' derivation='Sum' name='[sum:Ganjar Pranowo:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Prabowo Subianto]' derivation='Sum' name='[sum:Prabowo Subianto:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[sum:Ganjar Pranowo:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>110003</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>606681</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>234251</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>27040878</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>64677</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>283796</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>140733</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>958505</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>118385</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>720275</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>90727</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>335089</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>175956</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>7827335</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>41508</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>240143</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>159950</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>2820995</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>91293</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>357298</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>145570</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>999528</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>151109</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>1115138</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>160594</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>4434805</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>178534</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>186395</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>120565</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>741220</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>99899</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>534450</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>51451</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>241106</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>158788</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>1127134</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>124044</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>764486</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>62514</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>265948</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[attr:Anies Baswedan:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[sum:Anies Baswedan:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[attr:Prabowo Subianto:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[sum:Prabowo Subianto:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[attr:Ganjar Pranowo:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[sum:Ganjar Pranowo:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Indonesian_Election_Results_202' id='Indonesian!Election!Results!202_F8D102774BEA4750B6985DB8CA16C9F5'>
+            <properties context=''>
+              <relation connection='excel-direct.1g5f0w61d1a8kc1ebujl101yik1s' name='Indonesian_Election_Results_202' table='[Indonesian_Election_Results_202$]' type='table'>
+                <columns gridOrigin='A1:D40:no:A1:D40:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Province' ordinal='0' />
+                  <column datatype='integer' name='Anies Baswedan' ordinal='1' />
+                  <column datatype='integer' name='Prabowo Subianto' ordinal='2' />
+                  <column datatype='integer' name='Ganjar Pranowo' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Indonesian_Election_Results_2024' inline='true' name='federated.0rgizkw14i4p7t16qxqgb141igzb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Indonesian_Election_Results_2024' name='textscan.1phyvvv1tpmdrq1bfg08c04u5unt'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='/Users/ghazypadmakoesoema/Documents/2024 Indonesian election/Indonesian_Election_Results_2024.csv' dataRefreshTime='' directory='/Users/ghazypadmakoesoema/Documents/2024 Indonesian election' filename='/var/folders/nm/vfhp591j4615rxg8cvkk5pgh0000gn/T/tableau-temp/1hl0d9f0u4vn4t1eyxjyv161710r/Indonesian_Election_Results_2024.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1phyvvv1tpmdrq1bfg08c04u5unt' name='Indonesian_Election_Results_2024.csv' table='[Indonesian_Election_Resul#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:D40:no:A1:D40:1' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Province' ordinal='0' />
+            <column datatype='integer' name='Anies Baswedan' ordinal='1' />
+            <column datatype='integer' name='Prabowo Subianto' ordinal='2' />
+            <column datatype='integer' name='Ganjar Pranowo' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Indonesian_Election_Results_2024.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D40:no:A1:D40:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>117</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Province</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Province]</local-name>
+            <parent-name>[Indonesian_Election_Results_2024.csv]</parent-name>
+            <remote-alias>Province</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Indonesian_Election_Results_2024.csv_72C1ACE618674C57A079681AE7BCB5BC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Anies Baswedan</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Anies Baswedan]</local-name>
+            <parent-name>[Indonesian_Election_Results_2024.csv]</parent-name>
+            <remote-alias>Anies Baswedan</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Indonesian_Election_Results_2024.csv_72C1ACE618674C57A079681AE7BCB5BC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prabowo Subianto</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Prabowo Subianto]</local-name>
+            <parent-name>[Indonesian_Election_Results_2024.csv]</parent-name>
+            <remote-alias>Prabowo Subianto</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Indonesian_Election_Results_2024.csv_72C1ACE618674C57A079681AE7BCB5BC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ganjar Pranowo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ganjar Pranowo]</local-name>
+            <parent-name>[Indonesian_Election_Results_2024.csv]</parent-name>
+            <remote-alias>Ganjar Pranowo</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Indonesian_Election_Results_2024.csv_72C1ACE618674C57A079681AE7BCB5BC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Indonesian_Election_Results_2024.csv' datatype='table' name='[__tableau_internal_object_id__].[Indonesian_Election_Results_2024.csv_72C1ACE618674C57A079681AE7BCB5BC]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Indonesian_Election_Results_2024.csv' id='Indonesian_Election_Results_2024.csv_72C1ACE618674C57A079681AE7BCB5BC'>
+            <properties context=''>
+              <relation connection='textscan.1phyvvv1tpmdrq1bfg08c04u5unt' name='Indonesian_Election_Results_2024.csv' table='[Indonesian_Election_Resul#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:D40:no:A1:D40:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Province' ordinal='0' />
+                  <column datatype='integer' name='Anies Baswedan' ordinal='1' />
+                  <column datatype='integer' name='Prabowo Subianto' ordinal='2' />
+                  <column datatype='integer' name='Ganjar Pranowo' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>2024 Indonesian election </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indonesian_Election_Results_202 (Indonesian_Election_Results_2024)' name='federated.1v4vvz41ssj6ik13fxxp70g9ljng' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v4vvz41ssj6ik13fxxp70g9ljng'>
+            <column datatype='integer' name='[Anies Baswedan]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Ganjar Pranowo]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Prabowo Subianto]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Province]' derivation='Count' name='[cnt:Province:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Province]' derivation='None' name='[none:Province:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Anies Baswedan]' derivation='Sum' name='[sum:Anies Baswedan:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ganjar Pranowo]' derivation='Sum' name='[sum:Ganjar Pranowo:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Prabowo Subianto]' derivation='Sum' name='[sum:Prabowo Subianto:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[sum:Anies Baswedan:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[cnt:Province:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[sum:Ganjar Pranowo:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[sum:Prabowo Subianto:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[sum:Anies Baswedan:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[sum:Ganjar Pranowo:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[sum:Prabowo Subianto:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[none:Province:nk]</rows>
+        <cols>([federated.1v4vvz41ssj6ik13fxxp70g9ljng].[sum:Anies Baswedan:qk] + ([federated.1v4vvz41ssj6ik13fxxp70g9ljng].[sum:Ganjar Pranowo:qk] + [federated.1v4vvz41ssj6ik13fxxp70g9ljng].[sum:Prabowo Subianto:qk]))</cols>
+      </table>
+      <simple-id uuid='{98B342A6-E461-422E-ABAB-44AA8E1FC196}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[:Measure Names]</field>
+            <field>[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[none:Province:nk]</field>
+            <field>[federated.1v4vvz41ssj6ik13fxxp70g9ljng].[sum:Ganjar Pranowo:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A9B18E50-34E4-4C2D-96A9-6347B5E5AF38}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      QKclumWs/z/XyeiLaKFS7AAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
