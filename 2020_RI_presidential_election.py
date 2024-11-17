@@ -34,6 +34,5 @@ for index, row in df.iterrows():
 # Update layout
 fig.update_layout(title_text="2020 RI County Votes Distribution", showlegend=False)
 
-
 # Show the figure
 fig.show()
