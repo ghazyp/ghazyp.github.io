@@ -59,7 +59,7 @@ A given hex-encoded string has been XOR'd against a **single character**. Your t
 - Follow the general problem descriptions rather than solving only the provided examples.
 
 ## Notes
-- If using Python, refer to the provided sample solution for file I/O handling.
+- Please refer to the provided sample solution for file I/O handling.
 - Ensure your implementation handles **different inputs dynamically**.
 - Use appropriate libraries for **hex encoding/decoding, Base64 conversion, and bitwise XOR operations**.
 
