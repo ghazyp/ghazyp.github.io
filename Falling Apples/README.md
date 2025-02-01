@@ -22,7 +22,7 @@ Your task is to print the final configuration of the board after all apples reac
 ## Output Format
 - Print **R lines**, representing the final state of the grid after all apples have fallen.
 
-## Sample Input & Output
+## Examples
 
 ### **Sample Input 1**
 ```
